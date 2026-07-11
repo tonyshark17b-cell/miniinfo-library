@@ -40,7 +40,7 @@ body {
     background-color: #fff;
     color: black;
     width:40rem ;
-    padding: 0.7rem;
+    padding: 0.7rem ;
     border-radius: 20px;
     font-weight: bold;
     font-size: 1rem;
@@ -103,12 +103,9 @@ body {
         grid-template-columns: repeat(2,fr);
     }
 }
-@media (max-width:600px){
-    .cards{
-        grid-template-columns: 1fr;
-    }
-    .box{
-        width: 250px;
+@media (max-width: 600px) {
+    .cards {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     }
 }
 @media (max-width:760px){
