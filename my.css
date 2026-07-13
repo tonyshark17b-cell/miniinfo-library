@@ -14,7 +14,6 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 1rem;
 }
 
 .logo {
@@ -29,8 +28,13 @@ nav {
     align-items: center;
     list-style: none;
     gap: 2rem;
-    font-size: 1rem;
     cursor: pointer;
+    color: white;
+}
+.bar :hover {
+    background-color: white;
+    color: black;
+    border-radius: 20px;
 }
 
 .logo img {
@@ -151,40 +155,53 @@ nav {
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     }
 
-   
+
 
     li {
         width: 8rem;
         padding: 5px;
     }
-.bar li{
-    margin-top: 12px;
-}
+
+    .bar li {
+        margin-top: 12px;
+    }
+
     .bar {
         display: none;
         flex-direction: column;
-        background-color: black;
-        width: 9rem;
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(15px);
+        -webkit-backdrop-filter: blur(15px);
+        border-left: 1px solid rgba(255, 255, 255, 0.2);
+        box-shadow: -5px 0 20px rgba(0, 0, 0, 0.3);
+        width: 11rem;
         height: 100vh;
         position: absolute;
         top: 0;
         right: 0;
-        z-index: 999;
-        margin-top: 0.7rem;
+        z-index: 800;
         padding: 10px;
+        font-weight: bold;
+    }
+
+    nav {
+        position: relative;
     }
 
     .slide {
         display: block;
         background-color: transparent;
         font-size: 20px;
-        position: relative;
-        left: 7px;
-        z-index: 1000;
+        position: absolute;
+        right: 0;
+        z-index: 2000;
+        padding: 5px;
     }
-    .bar.active{
+
+    .bar.active {
         display: block;
     }
+
     .hone {
         display: none;
     }
