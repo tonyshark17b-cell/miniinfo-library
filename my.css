@@ -103,9 +103,11 @@ nav {
     border: none;
     padding: 2vh;
 }
-.slide{
+
+.slide {
     display: none;
 }
+
 .fa {
     font-size: 3vh;
     display: flex;
@@ -149,19 +151,16 @@ nav {
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     }
 
-    .bar{
-        flex-direction: column;
-        padding: 5px;
-        gap: 1rem;
-        /* background-color: #fff; */
+   
 
-    }
-    
-    li{
+    li {
         width: 8rem;
         padding: 5px;
     }
-    .bar{
+.bar li{
+    margin-top: 12px;
+}
+    .bar {
         display: none;
         flex-direction: column;
         background-color: black;
@@ -177,12 +176,15 @@ nav {
 
     .slide {
         display: block;
-        background-color: black;
+        background-color: transparent;
         font-size: 20px;
-       position: relative;
-       z-index: 1000;
+        position: relative;
+        left: 7px;
+        z-index: 1000;
     }
-
+    .bar.active{
+        display: block;
+    }
     .hone {
         display: none;
     }
