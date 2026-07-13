@@ -14,6 +14,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding-right:1rem ;
 }
 
 .logo {
@@ -176,7 +177,7 @@ nav {
         box-shadow: -5px 0 20px rgba(0, 0, 0, 0.3);
         width: 11rem;
         height: 100vh;
-        position: absolute;
+        position: fixed;
         top: 0;
         right: 0;
         z-index: 800;
@@ -185,14 +186,14 @@ nav {
     }
 
     nav {
-        position: relative;
+        padding: 0;
     }
 
     .slide {
         display: block;
         background-color: transparent;
         font-size: 20px;
-        position: absolute;
+        position: fixed;
         right: 0;
         z-index: 2000;
         padding: 5px;
