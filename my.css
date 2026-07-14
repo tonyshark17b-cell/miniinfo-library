@@ -184,7 +184,7 @@ nav {
         padding: 5px;
     }
     .in{
-        width: 300px;
+        width: 350px;
     }
     .bar li {
         margin-top: 12px;
@@ -220,7 +220,7 @@ nav {
         background-color: transparent;
         font-size: 20px;
         position: fixed;
-        right: 0;
+        right: 5px;
         z-index: 2000;
         padding: 5px;
     }
