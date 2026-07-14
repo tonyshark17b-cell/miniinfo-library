@@ -14,7 +14,9 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-right:1rem ;
+    padding-right: 1rem;
+    position: sticky;
+    top: 0;
 }
 
 .logo {
@@ -32,6 +34,7 @@ nav {
     cursor: pointer;
     color: white;
 }
+
 .bar :hover {
     background-color: white;
     color: black;
@@ -55,18 +58,19 @@ nav {
 }
 
 .in {
-    margin: 2rem;
+    margin: 1rem;
     display: flex;
     justify-content: center;
     justify-self: center;
     align-items: center;
-    background-color: #0f172a;
+    background: #0f172a;
     color: black;
     padding: 0.1rem;
     border-radius: 20px;
     box-sizing: border-box;
-    width: 100%;
-    max-width: 600px;
+    width: 30rem;
+    position: relative;
+    /* max-width: 600px; */
 }
 
 .search:focus {
@@ -76,7 +80,7 @@ nav {
 .search {
     background-color: #fff;
     color: black;
-    width: 40rem;
+    width: 100%;
     padding: 0.7rem;
     border-radius: 20px;
     font-weight: bold;
@@ -117,10 +121,9 @@ nav {
     font-size: 3vh;
     display: flex;
     margin: 10px;
-    /* padding: 1rem; */
     align-items: center;
     justify-content: center;
-    background-color: #0f172a;
+    background: #0f172a;
     color: white;
 }
 
@@ -131,7 +134,9 @@ nav {
     justify-items: center;
     color: #7dd3fc;
 }
-
+.suggesion div:hover{
+    background: #e8e8e8;
+}
 .butt {
     width: 40%;
     background: #3b82f6;
@@ -144,6 +149,23 @@ nav {
     border: none;
     margin: 0.5rem;
 }
+.suggesion div {
+    padding: 7px;
+    background-color: #fff;
+    color: black;
+}
+.suggesion {
+    background-color: white;
+    position: absolute;
+    margin-top: 0.5rem;
+    bottom: 5rem;
+    top: 100%;
+    left: 0;
+    z-index: 1001;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 100%;
+}
 
 @media(max-width:992px) {
     .cards {
@@ -155,9 +177,6 @@ nav {
     .cards {
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     }
-
-
-
     li {
         width: 8rem;
         padding: 5px;
@@ -166,13 +185,12 @@ nav {
     .bar li {
         margin-top: 12px;
     }
-
     .bar {
         display: none;
         flex-direction: column;
         background: rgba(255, 255, 255, 0.1);
-        backdrop-filter: blur(15px);
-        -webkit-backdrop-filter: blur(15px);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
         border-left: 1px solid rgba(255, 255, 255, 0.2);
         box-shadow: -5px 0 20px rgba(0, 0, 0, 0.3);
         width: 11rem;
