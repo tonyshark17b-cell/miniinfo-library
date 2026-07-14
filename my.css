@@ -58,6 +58,7 @@ nav {
 }
 
 .in {
+    position: relative;
     margin: 1rem;
     display: flex;
     justify-content: center;
@@ -69,8 +70,6 @@ nav {
     border-radius: 20px;
     box-sizing: border-box;
     width: 30rem;
-    position: relative;
-    /* max-width: 600px; */
 }
 
 .search:focus {
@@ -118,12 +117,9 @@ nav {
 }
 
 .fa {
-    font-size: 3vh;
-    display: flex;
+    font-size: 20px;
     margin: 10px;
-    align-items: center;
-    justify-content: center;
-    background: #0f172a;
+     background: #0f172a;
     color: white;
 }
 
@@ -154,17 +150,22 @@ nav {
     background-color: #fff;
     color: black;
 }
+.wrape{
+    background-color: black;
+    position: relative;
+    width: 29rem;
+    justify-self: center;
+}
 .suggesion {
     background-color: white;
-    position: absolute;
     margin-top: 0.5rem;
     bottom: 5rem;
+    position: absolute;
     top: 100%;
     left: 0;
-    z-index: 1001;
-    border-radius: 10px;
+    z-index: 999;
     cursor: pointer;
-    width: 100%;
+    width: 90%;
 }
 
 @media(max-width:992px) {
@@ -181,9 +182,14 @@ nav {
         width: 8rem;
         padding: 5px;
     }
-
+    .in{
+        width: 300px;
+    }
     .bar li {
         margin-top: 12px;
+    }
+    .wrape{
+        width: 300px;
     }
     .bar {
         display: none;
@@ -198,7 +204,7 @@ nav {
         position: fixed;
         top: 0;
         right: 0;
-        z-index: 800;
+        z-index: 1500;
         padding: 10px;
         font-weight: bold;
     }
