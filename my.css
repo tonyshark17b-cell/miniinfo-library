@@ -70,7 +70,7 @@ nav {
     padding: 0.1rem;
     border-radius: 20px;
     box-sizing: border-box;
-    width: 30rem;
+    width: 100%;
 }
 
 .search:focus {
@@ -218,9 +218,8 @@ nav {
 }
 
 .wrape {
-    background-color: transparent;
     position: relative;
-    width: 29rem;
+    width: 30rem;
     margin: 0 auto;
 }
 
@@ -267,17 +266,12 @@ nav {
         width: 8rem;
         padding: 5px;
     }
-
-    .in {
-        width: 360px;
-    }
-
     .bar li {
         margin-top: 12px;
     }
 
     .wrape {
-        width: 300px;
+        width: 360px;
     }
 
     .bar {
