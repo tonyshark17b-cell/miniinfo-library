@@ -21,7 +21,13 @@ body.addEventListener("click", () => {
 input.addEventListener("input", () => {
     const text = input.value.toLowerCase()
     suggesion.innerHTML = "";
+    const message = document.querySelector(".result")
+    if (message) {
+        message.remove();
+    }
+    let found = false ;
     cards.forEach(card => {
+        let found = true;
         const h2 = card.querySelector(".title");
         const title = h2.textContent.toLowerCase();
         if (title.startsWith(text) && text !== "") {
@@ -42,15 +48,23 @@ input.addEventListener("input", () => {
 
                 })
             })
-        } else {
-            card.style.display = "none"
+        } else{
+            card.style.display = "none";
         }
-        if (text === "") {
-            cards.forEach(card => {
-                card.style.display = "block";
-                suggesion.innerHTML = "";
-            })
-        }
+    if (text === "") {
+        cards.forEach(card => {
+            card.style.display = "block";
+            suggesion.innerHTML = "";
+        })
+    }
+    
+}); if (!found && text !== "") {
+    const count = document.querySelector(".cards")
+    count.style.display ="block";
+        const dill = document.createElement("div");
+        dill.classList.add("result");
+        dill.textContent = "No result found";
 
-    });
+        document.querySelector(".cards").appendChild(dill);
+    }
 })

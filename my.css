@@ -146,6 +146,13 @@ nav {
     border: none;
     margin: 0.5rem;
 }
+.result{
+    display: flex;
+    justify-self: center;
+    text-align: center;
+    color: white;
+    font-size: 1.5rem;
+}
 .suggesion div {
     padding: 7px;
     background-color: #fff;
@@ -157,6 +164,7 @@ nav {
     width: 29rem;
     margin: 0 auto;
 }
+
 .suggesion {
     background-color: white;
     margin-top: 0.5rem;
@@ -212,6 +220,7 @@ nav {
     }
 
     nav {
+        position: relative;
         padding: 0;
     }
 
@@ -224,7 +233,6 @@ nav {
         z-index: 2000;
         padding: 5px;
     }
-
     .bar.active {
         display: block;
     }
