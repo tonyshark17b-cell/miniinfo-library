@@ -70,3 +70,19 @@ input.addEventListener("input", () => {
         document.querySelector(".cards").style.display ="grid"
     }
 })
+const buttons = document.querySelectorAll(".butt");
+
+buttons.forEach(button => {
+
+    button.addEventListener("click", () => {
+
+        const card = button.closest(".box");
+
+        const title = card.querySelector(".title").textContent;
+
+        window.location.href =
+        `detail.html?topic=${encodeURIComponent(title)}`;
+
+    });
+
+});

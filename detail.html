@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>computer learning</title>
+</head>
+<style>
+    *{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    background:#0f172a;
+    color:white;
+    font-family:Arial, Helvetica, sans-serif;
+
+}
+
+nav{
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:15px 30px;
+
+    background:#1e293b;
+
+    position:sticky;
+    top:0;
+
+}
+
+.back-btn{
+
+    background:#3b82f6;
+
+    color:white;
+
+    border:none;
+
+    padding:10px 18px;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.back-btn:hover{
+
+    background:#2563eb;
+
+}
+
+.container{
+
+    max-width:900px;
+
+    margin:auto;
+
+    padding:30px;
+
+}
+
+.hero{
+
+    text-align:center;
+
+    margin-bottom:40px;
+
+}
+
+.hero img{
+
+    width:180px;
+
+    height:180px;
+
+    object-fit:contain;
+
+    background:#1e293b;
+
+    border-radius:50%;
+
+    padding:20px;
+
+    box-shadow:0 0 20px rgba(59,130,246,.4);
+
+}
+
+.hero h1{
+
+    margin-top:20px;
+
+    font-size:2.5rem;
+
+}
+
+.hero p{
+
+    color:#94a3b8;
+
+    margin-top:10px;
+
+}
+
+.card{
+
+    background:#1e293b;
+
+    margin-bottom:25px;
+
+    padding:25px;
+
+    border-radius:18px;
+
+    border-left:5px solid #3b82f6;
+
+    transition:.3s;
+
+}
+
+.card:hover{
+
+    transform:translateY(-5px);
+
+    box-shadow:0 10px 20px rgba(0,0,0,.35);
+
+}
+
+.card h2{
+
+    margin-bottom:15px;
+
+    color:#7dd3fc;
+
+}
+
+.card p{
+
+    line-height:1.8;
+
+}
+
+.card ul{
+
+    margin-left:20px;
+
+}
+
+.card li{
+
+    margin:10px 0;
+
+}
+
+.links{
+
+    display:flex;
+
+    gap:15px;
+
+    flex-wrap:wrap;
+
+}
+
+.links a{
+
+    text-decoration:none;
+
+    background:#3b82f6;
+
+    color:white;
+
+    padding:10px 18px;
+
+    border-radius:10px;
+
+    transition:.3s;
+
+}
+
+.links a:hover{
+
+    background:#2563eb;
+
+}
+
+@media(max-width:768px){
+
+    nav{
+
+        padding:15px;
+
+    }
+
+    .hero img{
+
+        width:140px;
+
+        height:140px;
+
+    }
+
+    .hero h1{
+
+        font-size:2rem;
+
+    }
+
+    .container{
+
+        padding:15px;
+
+    }
+
+}
+.back-btn{
+    text-decoration:none;
+    background:#3b82f6;
+    color:white;
+    padding:10px 20px;
+    border-radius:10px;
+}
+</style>
+
+<body>
+    <button class="back-btn"><a href="index.html">← Back</a></button>
+   <div class="container">
+
+    <section class="hero">
+
+        <img src="image3.jpg" alt="Topic Image" id="topicImage">
+
+        <h1 id="topicTitle">Computer Learning</h1>
+
+        <p id="topicSubtitle">
+            Learn the basics of computers and modern technology.
+        </p>
+
+    </section>
+
+    <section class="card">
+
+        <h2>Introduction</h2>
+
+        <p id="intro">
+            A computer is an electronic machine that accepts data,
+            processes it, stores it, and produces useful information.
+            Computers are used in education, business, entertainment,
+            communication, and many other fields.
+        </p>
+
+    </section>
+
+    <section class="card">
+
+        <h2>What You'll Learn</h2>
+
+        <ul id="learnList">
+
+            <li>Computer Basics</li>
+            <li>Hardware</li>
+            <li>Software</li>
+            <li>Operating System</li>
+            <li>Internet</li>
+
+        </ul>
+
+    </section>
+
+    <section class="card">
+
+        <h2>Useful Websites</h2>
+
+        <div class="links">
+
+            <a href="#">Visit Website</a>
+            <a href="#">Visit Website</a>
+            <a href="#">Visit Website</a>
+
+        </div>
+
+    </section>
+
+    <section class="card">
+
+        <h2>Recommended Videos</h2>
+
+        <div class="links">
+
+            <a href="#">Watch Video</a>
+            <a href="#">Watch Video</a>
+
+        </div>
+
+    </section>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+
+</html>
